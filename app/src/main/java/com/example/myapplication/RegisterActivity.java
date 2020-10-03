@@ -81,7 +81,7 @@ public class RegisterActivity extends AppCompatActivity {
                 body.put("nama", nama);
                 body.put("alamat", alamat);
                 body.put("noktp", ktp);
-                AndroidNetworking.post("http://192.168.43.164:8000/api/register")
+                AndroidNetworking.post("http://192.168.6.174:8000/api/register")
                         .addBodyParameter(body)
                         .setPriority(Priority.MEDIUM)
                         .setOkHttpClient(((RS) getApplication()) .getOkHttpClient())
